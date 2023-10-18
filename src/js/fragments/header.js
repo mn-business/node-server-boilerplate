@@ -1,8 +1,3 @@
-import '@/styles/tailwind.css';
-import '@/styles/header.css';
-import { themeChange } from 'theme-change';
-themeChange();
-
 const header = document.getElementById('divHeader');
 const headerHeight = header.getBoundingClientRect().height;
 
