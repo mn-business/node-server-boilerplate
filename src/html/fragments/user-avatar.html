@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+      xmlns:sec="http://thymeleaf.org/extras/spring-security"
+      th:fragment="user-avatar">
+<div title="Avatar" class="dropdown dropdown-end">
+    <div tabindex="0" class="btn btn-ghost normal-case">
+        <div tabindex="0" sec:authorize="isAuthenticated()">
+            <!--                                 sec:authentication="principal.avatar">-->
+            <div class="avatar items-center">
+                <div class="w-6 h-6">
+                    <img src="/moreapp/dist/assets/user/login.png" alt="Avatar"/>
+                </div>
+            </div>
+        </div>
+        <a sec:authorize="isAnonymous()" href="/login">login</a>
+    </div>
+    <div class="dropdown-content bg-base-200 text-base-content rounded-box top-px mt-16 w-80 overflow-y-auto shadow"
+         sec:authorize="isAuthenticated()">
+        <div class="flex p-3">
+            <div class="avatar items-center">
+                <div class="w-7 h-7">
+                    <img src="/moreapp/dist/assets/user/login.png" alt="Avatar"/>
+                </div>
+            </div>
+            <div class="flex-col ml-2">
+                <span sec:authentication="principal.user.name" class="text-sm"></span><br>
+                <span sec:authentication="principal.user.email" class="text-sm"></span>
+            </div>
+        </div>
+        <ul class="menu menu-sm gap-1" tabindex="0">
+            <li>
+                <a href="/logout">logout</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</html>

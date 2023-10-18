@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="side">
+<aside class="bg-base-100 w-80">
+    <ul class="menu menu-sm lg:menu-md px-4 py-0">
+        <li class="menu-title flex flex-row gap-4">
+            <span class="text-base-content">
+                <img class="w-6 h-6" src="/moreapp/dist/assets/excavator-mini.png" alt="중장비">
+            </span>
+            <span>중장비</span></li>
+        <li><a href="/worklog/logs" data-sveltekit-preload-data="hover"><span>작업일지</span></a></li>
+        <li><a href="/worklog/reports" data-sveltekit-preload-data="hover"><span>차트</span></a></li>
+        <li><a href="/worklog/yet-payments" data-sveltekit-preload-data="hover"><span>미수금</span></a></li>
+        <li><a href="/worklog/master" data-sveltekit-preload-data="hover"><span>장비 &amp; 시공사</span></a></li>
+    </ul>
+    <ul class="menu menu-sm lg:menu-md px-4 py-0"></ul>
+    <div class="bg-base-100 pointer-events-none sticky bottom-0 flex h-40 [mask-image:linear-gradient(transparent,#000000)]"></div>
+</aside>
+</html>

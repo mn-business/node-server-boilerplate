@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{moreapp/dist/fragments/layout-index}"
+      layout:fragment="content">
+<div class="from-primary to-secondary text-primary-content -mt-[4rem] grid place-items-center items-end bg-gradient-to-br pt-20">
+    <div class="hero-content col-start-1 row-start-1 w-full max-w-7xl flex-col justify-between gap-10 pb-40 lg:flex-row lg:items-end lg:gap-0 xl:gap-20">
+        <div class="lg:pl-10 lg:pb-32">
+            <div class="mb-2 py-4 text-center lg:py-10 lg:text-left">
+                <h1 class="font-title mb-2 text-4xl font-extrabold sm:text-5xl lg:text-6xl">
+                    <span class="lowercase text-first">more</span>
+                    <span class="lowercase text-secondary">mong</span>
+                </h1>
+                <h2 class="font-title text-lg font-extrabold sm:text-xl lg:text-2xl mt-8">
+                    몰몽은 의미는<br>더 많은(more) 꿈(夢, mong) 입니다.<br>당신의 꿈과 함께 합니다.</h2></div>
+            <div class="flex w-full flex-col items-center space-y-10 lg:flex-row lg:items-start lg:space-x-4 lg:space-y-0">
+                <div class="my-2 flex max-w-sm flex-col gap-2 text-left">
+                    <div class="flex gap-2">
+                        <a href="/worklog/logs/" class="btn btn-ghost drawer-button font-normal normal-case">
+                            <svg width="20" height="20" class="w-4 h-4 fill-current" aria-hidden="true"
+                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path fill="currentColor"
+                                      d="M6 1a1 1 0 0 0-2 0h2ZM4 4a1 1 0 0 0 2 0H4Zm7-3a1 1 0 1 0-2 0h2ZM9 4a1 1 0 1 0 2 0H9Zm7-3a1 1 0 1 0-2 0h2Zm-2 3a1 1 0 1 0 2 0h-2ZM1 6a1 1 0 0 0 0 2V6Zm18 2a1 1 0 1 0 0-2v2ZM5 11v-1H4v1h1Zm0 .01H4v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM10 11v-1H9v1h1Zm0 .01H9v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM10 15v-1H9v1h1Zm0 .01H9v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM15 15v-1h-1v1h1Zm0 .01h-1v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM15 11v-1h-1v1h1Zm0 .01h-1v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM5 15v-1H4v1h1Zm0 .01H4v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM2 4h16V2H2v2Zm16 0h2a2 2 0 0 0-2-2v2Zm0 0v14h2V4h-2Zm0 14v2a2 2 0 0 0 2-2h-2Zm0 0H2v2h16v-2ZM2 18H0a2 2 0 0 0 2 2v-2Zm0 0V4H0v14h2ZM2 4V2a2 2 0 0 0-2 2h2Zm2-3v3h2V1H4Zm5 0v3h2V1H9Zm5 0v3h2V1h-2ZM1 8h18V6H1v2Zm3 3v.01h2V11H4Zm1 1.01h.01v-2H5v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H5v2h.01v-2ZM9 11v.01h2V11H9Zm1 1.01h.01v-2H10v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H10v2h.01v-2ZM9 15v.01h2V15H9Zm1 1.01h.01v-2H10v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H10v2h.01v-2ZM14 15v.01h2V15h-2Zm1 1.01h.01v-2H15v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H15v2h.01v-2ZM14 11v.01h2V11h-2Zm1 1.01h.01v-2H15v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H15v2h.01v-2ZM4 15v.01h2V15H4Zm1 1.01h.01v-2H5v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H5v2h.01v-2Z"/>
+                            </svg>
+                            <div id="root"></div>
+                        </a>
+                    </div>
+                    <!--                    <div class="flex gap-2">-->
+                    <!--                        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="none"-->
+                    <!--                             viewBox="0 0 24 24" class="inline-block h-6 w-6 stroke-current">-->
+                    <!--                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
+                    <!--                                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>-->
+                    <!--                        </svg>-->
+                    <!--                        A free plugin for Tailwind CSS-->
+                    <!--                    </div>-->
+                    <!--                    <div class="flex gap-2">-->
+                    <!--                        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="none"-->
+                    <!--                             viewBox="0 0 24 24" class="inline-block h-6 w-6 stroke-current">-->
+                    <!--                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
+                    <!--                                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>-->
+                    <!--                        </svg>-->
+                    <!--                        Faster development-->
+                    <!--                    </div>-->
+                    <!--                    <div class="flex gap-2">-->
+                    <!--                        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="none"-->
+                    <!--                             viewBox="0 0 24 24" class="inline-block h-6 w-6 stroke-current">-->
+                    <!--                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
+                    <!--                                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>-->
+                    <!--                        </svg>-->
+                    <!--                        Cleaner HTML-->
+                    <!--                    </div>-->
+                    <!--                    <div class="flex gap-2">-->
+                    <!--                        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="none"-->
+                    <!--                             viewBox="0 0 24 24" class="inline-block h-6 w-6 stroke-current">-->
+                    <!--                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
+                    <!--                                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>-->
+                    <!--                        </svg>-->
+                    <!--                        Customizable and themeable-->
+                    <!--                    </div>-->
+                    <!--                    <div class="flex gap-2">-->
+                    <!--                        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="none"-->
+                    <!--                             viewBox="0 0 24 24" class="inline-block h-6 w-6 stroke-current">-->
+                    <!--                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
+                    <!--                                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>-->
+                    <!--                        </svg>-->
+                    <!--                        Pure CSS. Works on all frameworks-->
+                    <!--                    </div>-->
+                </div>
+            </div>
+            <!--            <div class="mt-4 flex flex-1 justify-center space-x-2 lg:mt-6 lg:justify-start"><a-->
+            <!--                    href="/components"-->
+            <!--                    class="btn btn-ghost btn-active lg:btn-lg normal-case"><span-->
+            <!--                    class="hidden sm:inline">See components</span>-->
+            <!--                <span class="inline sm:hidden">Components</span></a> <a-->
+            <!--                    href="/docs/install"-->
+            <!--                    class="btn lg:btn-lg normal-case">How-->
+            <!--                to use?</a></div>-->
+        </div>
+    </div>
+</div>
+</html>

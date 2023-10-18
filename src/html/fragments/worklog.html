@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="worklog">
+<div title="Worklog" class="dropdown dropdown-end">
+    <!--    <div class="hidden flex-none items-center lg:block">-->
+    <!--        <a href="/worklog/logs/" class="btn btn-ghost drawer-button font-normal normal-case">-->
+    <!--            작업일지</a>-->
+    <!--    </div>-->
+    <div tabindex="0" class="btn gap-1 normal-case btn-ghost pl-0">
+        <span class="font-normal md:inline">중장비</span>
+    </div>
+    <ul class="dropdown-content menu bg-primary rounded-box">
+        <li><a href="/worklog/logs" class="text-xs">작업일지</a></li>
+        <li><a href="/worklog/reports" class="text-xs">차트</a></li>
+        <li><a href="/worklog/yet-payments" class="text-xs">미수금</a></li>
+        <li><a href="/worklog/master" class="text-xs">장비 & 시공사</a></li>
+    </ul>
+    <!--    <div class="dropdown-content bg-primary rounded-box top-px max-h-96 w-56 overflow-y-auto shadow mt-16">-->
+    <!--    </div>-->
+</div>
+</html>
